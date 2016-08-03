@@ -1,0 +1,31 @@
+timestamp: 2016-08-03
+title: 'Volkswagen Car Configurator'
+
+description: |
+  Mit dem Volkswagen Car Configurator ist es möglich, den ganz persönlichen Volkswagen individuell zu konfigurieren.
+  <br><br>
+  Fest im Dev-Team von <a href="http://sinnerschrader.de/">SinnerSchrader</a> integriert, war ich über 8 Monate lang am Aufbau dieser Webandwendung beteiligt.
+  <br><br>
+  Dabei handelt es sich um eine Universal (aka "Isomorphic") <a href="https://facebook.github.io/react/">React</a> Anwendung.
+  Die MV* Architektur wurde mit Hilfe von <a href="http://redux.js.org/">Redux</a> umgesetzt, untestützt mit umfangreichen Unit und E2E Tests.
+
+images:
+  - /assets/images/work/vw-configurator/0.jpg
+  - /assets/images/work/vw-configurator/1.jpg
+
+responsibilities:
+  - <a href="http://www.typescriptlang.org/">TypeScript</a> Programmierung in <a href="http://www.ecma-international.org/ecma-262/6.0//">ES 2015</a>
+  - MV* Architektur mit <a href="https://facebook.github.io/react/">React</a> und <a href="http://redux.js.org/">Redux</a>
+  - Anbindung komplexer Daten-Schnittstellen
+  - Unit Testing (<a href="http://mochajs.org/">Mocha</a>, <a href="http://chaijs.com/">Chai</a>, <a href="http://airbnb.io/enzyme/">Enzyme</a>)
+  - E2E / UI Automation Testing (<a href="http://webdriver.io/">Webdriver</a>, <a href="https://cucumber.io/docs/reference/javascript">Cucumber JS</a>)
+  - Komponentenentwicklung mit "<a href="https://github.com/sinnerschrader/patternplate">patternplate</a>"
+  - Code Reviews über <a href="https://www.gerritcodereview.com/">Geritt</a>
+
+      ​
+
+timeframe:
+  November 2015 - Juli 2016
+
+client:
+  <a href="http://sinnerschrader.de/">SinnerSchrader GmbH</a> - Hamburg
