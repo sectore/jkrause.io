@@ -2,9 +2,9 @@ timestamp: 2016-11-01
 title: 'Herculus.io'
 
 description: |
-  <a href="http://herculus.io">Herculus.io</a> ist eine Spreadsheet ähnliche Anwendung
-  für die einfache Verwaltung komplexer Datenstruturen. Als webbasierte Anwendung
-  ist Herculus komplett in <a href="http://www.haskell.org">Haskell</a> umgesetzt.
+  <a href="http://herculus.io">Herculus.io</a> ist eine Spreadsheet basierende
+  Webanwendung für die einfache Verwaltung komplexer Datenstrukturen. Herculus
+  wurde komplett mit <a href="http://www.haskell.org">Haskell</a> umgesetzt.
   <br><br>
   Über ein Internship hatte ich die Möglichkeit, in die fantastische
   <a href="http://www.haskell.org">Haskell</a> Welt
@@ -22,7 +22,7 @@ responsibilities:
     <a href="https://github.com/ghcjs/ghcjs">GHCJS</a>
     , <a href="https://hackage.haskell.org/package/react-flux">React Flux</a>
     , <a href="http://haskell-servant.github.io/">Servant</a>
-    , <a href="https://hackage.haskell.org/package/aeson">Aeason</a>
+    , <a href="https://hackage.haskell.org/package/aeson">Aeson</a>
     , <a href="https://www.stackage.org/">Stack</a>
     , uvm.)
 
