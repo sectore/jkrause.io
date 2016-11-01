@@ -1,0 +1,33 @@
+timestamp: 2016-11-01
+title: 'Herculus.io'
+
+description: |
+  <a href="http://herculus.io">Herculus.io</a> ist eine Spreadsheet ähnliche Anwendung
+  für die einfache Verwaltung komplexer Datenstruturen. Als webbasierte Anwendung
+  ist Herculus komplett in <a href="http://www.haskell.org">Haskell</a> umgesetzt.
+  <br><br>
+  Über ein Internship hatte ich die Möglichkeit, in die fantastische
+  <a href="http://www.haskell.org">Haskell</a> Welt
+  tiefer einzutauchen. Das bedeutete Haskellprogrammierung in Vollzeit sowohl
+  im Front- als auch im Backend.
+  <br><br>
+  Mit <a href="https://www.xing.com/profile/Moritz_Drexl/">Moritz Drexl</a> und
+  <a href="https://www.xing.com/profile/Ruben_Moor/">Ruben Moor</a> hatte ich
+  dabei die besten Haskell Mentoren an meiner Seite. Vielen Dank!
+images:
+  - /assets/images/work/herculus/0.png
+
+responsibilities:
+  - Programmierung mit <a href="http://www.haskell.org">Haskell</a> (
+    <a href="https://github.com/ghcjs/ghcjs">GHCJS</a>
+    , <a href="https://hackage.haskell.org/package/react-flux">React Flux</a>
+    , <a href="http://haskell-servant.github.io/">Servant</a>
+    , <a href="https://hackage.haskell.org/package/aeson">Aeason</a>
+    , <a href="https://www.stackage.org/">Stack</a>
+    , uvm.)
+
+timeframe:
+  September 2016 - heute
+
+client:
+  <a href="http://herculus.io/">Herculus.io</a> - Hamburg
