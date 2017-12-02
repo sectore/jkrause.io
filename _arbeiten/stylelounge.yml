@@ -2,10 +2,10 @@ timestamp: 2015-10-15
 title: 'StyleLounge'
 
 description:
-  Für insgesamt 3 Monate unterstützte ich das internationale Team des Hamburger Startups
+  Für einige Monate unterstützte ich das internationale Team des Hamburger Startups
   <a href="http://www.stylelounge.de/">StyleLounge</a> im Front- und Backend.
   <br><br>
-  Meine Hauptaufgaben waren im Frontend die Migration zu <a href="http://angular.io/">Angular 2</a>
+  Meine Hauptaufgaben waren im Frontend die Migration von Angular 1 zu <a href="http://angular.io/">Angular 2</a>
   sowie die Verbesserung der Buildprozesse mit
   <a href="http://jspm.io/">jspm</a> und <a href="http://gulp.com/">Gulp</a>.
   Im Backend war ich an der Neuentwicklung des auf <a href="https://nodejs.org/">Node.js</a> basierenden Importers für die
@@ -15,7 +15,7 @@ images:
   - /assets/images/work/stylelounge/0.jpg
 
 responsibilities:
-  - Migration zu <a href="http://angular.io/">Angular 2.0</a>
+  - Migration von Angular 1.x zu <a href="http://angular.io/">Angular 2.0</a>
   - Buildprozesse mit <a href="http://jspm.io/">jspm</a> und <a href="http://gulp.com/">Gulp</a>
   - Globales Eventsystem mit <a href="https://github.com/Reactive-Extensions/RxJS">RxJS</a>
   - Weiterentwicklung des Feedimporters mit <a href="https://nodejs.org/">Node.js</a>

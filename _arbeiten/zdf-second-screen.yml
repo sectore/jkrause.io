@@ -21,10 +21,10 @@ responsibilities:
   - MV* Architektur (<a href="http://marionettejs.com/">MarionetteJS</a>)
   - Modularisierung (<a href="http://browserify.org/">Browserify</a>)
   - Unit Testing (<a href="http://karma-runner.github.io/">Karma</a>, <a href="http://visionmedia.github.io/mocha/">Mocha</a>, <a href="http://chaijs.com/">Chai</a>, <a href="http://sinonjs.org/">Sinon</a>)
-  - Socialfunktionen (Facebook, Google+, Instagram, Twitter, Youtube)
+  - Anbindung Sozialer Netzwerke (Facebook, Google+, Instagram, Twitter, Youtube)
   - Templating (<a href="http://handlebarsjs.com/">Handlebars</a>)
   - Styling (<a href="http://sass-lang.com/">SASS</a>)
-  - API-Anbindung ZDF Videoplayer
+  - API-Anbindung zum ZDF Videoplayer
   - Build- / Deploymentprozesse (<a href="http://gruntjs.com/">Grunt</a>)
 
 timeframe:

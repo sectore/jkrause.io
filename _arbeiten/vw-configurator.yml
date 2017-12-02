@@ -4,10 +4,12 @@ title: 'Volkswagen Car Configurator'
 description: |
   Mit dem <a href="https://www.volkswagen.es/app/configurador/vw-es/es">Volkswagen Car Configurator</a> ist es möglich, den ganz persönlichen Volkswagen individuell zu konfigurieren.
   <br><br>
-  Fest im Dev-Team von <a href="http://sinnerschrader.de/">SinnerSchrader</a> integriert, war ich über 8 Monate lang am Aufbau dieser Webandwendung beteiligt.
+  Gemeinsam mit dem Dev-Team von <a href="http://sinnerschrader.de/">SinnerSchrader</a> war ich
+  am Aufbau sowie der Weiterentwicklung der Webandwendung beteiligt.
   <br><br>
-  Dabei handelt es sich um eine Universal (aka "Isomorphic") <a href="https://facebook.github.io/react/">React</a> Anwendung.
-  Die MV* Architektur wurde mit Hilfe von <a href="http://redux.js.org/">Redux</a> umgesetzt, untestützt mit umfangreichen Unit und E2E Tests.
+  Dabei handelt es sich um eine Universal ("Isomorphic") <a href="https://facebook.github.io/react/">React</a> Anwendung.
+  Die MV* Architektur wurde mit Hilfe von <a href="http://redux.js.org/">Redux</a> umgesetzt,
+  verbunden von umfangreichen Unit und E2E Tests.
 
 images:
   - /assets/images/work/vw-configurator/0.jpg

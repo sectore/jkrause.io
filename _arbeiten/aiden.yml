@@ -4,7 +4,7 @@ title: 'Aiden - React Native App (Prototype)'
 description: |
   <a href="http://myaiden.co/">Aiden</a> ist ein junges Startup aus Deutschland, welches sich um die einfache Vermittlung von Jobs engagiert.
   <br><br>
-  Für die super Jungs von Aiden baute ich als "Side Project" eine native iOS Anwendung mit <a href="https://facebook.github.io/react-native/">React Native</a>.
+  Für Aiden baute ich eine native iOS Anwendung mit <a href="https://facebook.github.io/react-native/">React Native</a>.
   Zum Einsatz kamen zudem <a href="http://redux.js.org/">Redux</a>, <a href="https://github.com/yelouafi/redux-saga">Redux Saga</a> und <a href="http://reactivex.io/">RxJS</a>.
 images:
   - /assets/images/work/aiden/0.jpg

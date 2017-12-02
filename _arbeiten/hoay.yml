@@ -2,13 +2,13 @@ timestamp: 2013-09-01
 title: HOAY - iOS Anwendung zur Altersberechnung
 
 description:
-  Zur Evaluierung der derzeit aktuellen Versionen von <a href="http://angularjs.org/">AngularJS</a> (v.1.2.0-rc1) und <a href="http://phonegap.com/">PhoneGap</a> (v.3.0) entwickelte ich die mobile Anwendung HOAY ("How old are you").
+  Zur Evaluierung der derzeit aktuellen Versionen von <a href="http://angularjs.org/">AngularJS</a> (v.1.2.0-rc1) und <a href="http://phonegap.com/">PhoneGap</a> (v.3.0) entwickelte ich die mobile Anwendung HOAY ("How old are you?").
   <br><br>
   Mit HOAY ist es möglich, das Alter in Jahren, Monaten und Tagen zu berechnen.
   <br><br>
   Als Ergebnis ist eine für den User sehr einfach zu bedienene iOS Anwendung entstanden, die u.a. für Tests in einer Praxis für Kinder- und Jugendpsychiatrie eingesetzt wird.
   <br><br>
-  Die Anwendung ist <a href="https://itunes.apple.com/de/app/hoay/id693621393">kostenlos im iTunes Store</a> erhältlich.
+  Die Anwendung ist kostenlos im <s>iTunes Store</s> erhältlich.
   <br><br>
   Der <a href="https://github.com/sectore/hoay">gesamte Code</a> bei <a href="https://github.com/sectore/hoay">GitHub</a> frei zugänglich.
 
