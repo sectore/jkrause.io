@@ -1,0 +1,22 @@
+timestamp: 2017-12-02
+title: 'Cardano SL'
+
+description: |
+  <a href="http://cardanodocs.com/">Cardano SL</a> (oder Cardano Settlement Layer) ist
+  eine kryptographische Währung, welche von <a href="http://iohk.io/team">IOHK</a>
+  in Zusammenarbeit mit Universitäten (u.a. Universität Edinburgh,
+  Universität Athen, Universität Connecticut) entworfen und entwickelt wird.
+  <br><br>
+  In einem internationalen Team bin ich an der Front- und Backendentwicklung beteiligt.
+images:
+  - /assets/images/work/cardano-sl/0.png
+
+responsibilities:
+  - Backendentwicklung in <a href="http://www.haskell.org">Haskell</a>
+  - Frontendentwicklung in <a href="http://www.purescript.org/">PureScript</a>
+
+timeframe:
+  Dezember 2016 - heute
+
+client:
+  <a href="http://iohk.io/">IOHK</a> - Hongkong
