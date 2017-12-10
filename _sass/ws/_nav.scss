@@ -54,7 +54,7 @@ $main-nav-height: rem(50);
 
   @include respond-to($default-and-big-screen) {
     height: $main-nav-height;
-    @include span-columns(7);
+    @include span-columns(9);
     li {
       float: left;
 
@@ -119,7 +119,7 @@ $main-nav-height: rem(50);
 
   @include respond-to($default-and-big-screen) {
     @include omega;
-    @include span-columns(5);
+    @include span-columns(3);
     text-align: right;
     li {
       float: right;
