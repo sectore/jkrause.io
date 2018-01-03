@@ -1,12 +1,4 @@
 
-
-// @include margin-leader(2);
-// margin-top: rem(100);
-
-// @include margin-trailer(1);
-//  margin-bottom: rem(50);
-
-
 * {
   $border-box-sizing: true !global;
   font-size: rem($font-size-default);
@@ -45,13 +37,16 @@ sup{
 
 
 #wrapper {
-  @include outer-container;
+  max-width: rem(1088);
+  margin: {
+    left: auto;
+    right: auto;
+  }
 }
 
 .content {
 
   p {
-//    @include margin-trailer(0.5);
     margin-bottom: rem(25);
     color: $font-color-light;
   }
@@ -104,8 +99,8 @@ article {
 
 .left-content {
   @include respond-to($default-and-big-screen) {
-    @include span-columns(6);
-//    @include post(0);
+    @include grid-column(6);
+    margin-left: 0;
   }
 }
 
@@ -113,8 +108,7 @@ article {
   margin-top: rem(75);
   @include respond-to($default-and-big-screen) {
     margin-top: 0;
-    @include span-columns(6);
-    @include omega;
+    @include grid-push(6);
   }
 }
 

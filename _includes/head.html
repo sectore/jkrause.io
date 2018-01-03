@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jens Krause {% if page.title %} - {{ page.title }} {% endif %}</title>
   {% if page.group == 'home' %}
-  <meta name="keywords" content="Jens Krause, Softwareentwickler, Freelancer, JavaScript, Hamburg" />
+  <meta name="keywords" content="Jens Krause, Softwareentwickler, Freelancer, Haskell, PureScript, JavaScript, Hamburg" />
   <meta name="description" content="Jens Krause ist selbständiger Software Entwickler mit Sitz in Hamburg und Scharbeutz" />
   {% endif %}
   <meta name="author" content="Jens Krause" />
@@ -20,6 +20,14 @@
   <link rel="stylesheet" href="/assets/stylesheets/ws.css"/>
   {% if page.group == 'blog' %}
   <script src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+  {% endif %}
+  {% if page.group == 'contact' %}
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+    integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+    crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+    integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+    crossorigin=""></script>
   {% endif %}
 </head>
 <body>

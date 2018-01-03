@@ -8,8 +8,7 @@ blog/uploads
 /*.png
 *.ico
 
-.idea/*
-*.iml
+keybase.txt
 
 .DS_Store
 

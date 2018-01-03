@@ -1,11 +1,10 @@
-#contact{
-  @include clearfix;
-  .left-content{
-    @include respond-to($default-and-big-screen){
-      padding-left: 0;
-    }
-  }
+$contact-grid: (
+  columns: 2,
+  gutter: 10px,
+);
 
+#contact{
+  @include grid-container;
 
   @include respond-to($small-and-default-screen){
       p{
@@ -13,13 +12,14 @@
       }
   }
 
-  .right-content{
-    @include respond-to($default-and-big-screen){
-      padding-right: 0;
-    }
+  iframe{
+    width: 100%;
+    height: rem(350);
+    margin-bottom: rem(25);
   }
 
-  iframe{
+  #map-hh,
+  #map-schbtz {
     width: 100%;
     height: rem(350);
     margin-bottom: rem(25);

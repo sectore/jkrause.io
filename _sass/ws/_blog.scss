@@ -12,11 +12,15 @@
   position: relative;
 
   h1{
-    padding: rem(5) rem(45);
+    padding: rem(5) rem(40);
   }
 
   @include respond-to($big-screen){
-    padding: 0 rem(20);
+    padding: 0;
+
+    h1{
+      padding: 0 rem(20);
+    }
   }
 }
 
@@ -115,7 +119,3 @@ div.embed,
 div.embed iframe{
   width: 100%
 }
-
-
-
-
