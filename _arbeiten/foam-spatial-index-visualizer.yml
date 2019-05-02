@@ -3,11 +3,11 @@ title: 'FOAM - Spatial Index and Visualizer'
 
 description: |
   <a href="https://foam.space/">FOAM</a> ist ein offenes Protokoll für dezentralisierte, raumbezogene Daten. 
-  Es bildet raumbezogene Daten sicher auf der Blockchain ab - unabhängig von externen, zentralisierten Quellen, wie z.B. GPS. 
+  Es bildet Geodaten sicher auf der Blockchain ab - unabhängig von externen, zentralisierten Quellen, wie z.B. GPS. 
   <br><br>
-  Der <i>Spatial Index Visualizer</i> ermöglicht es Usern, auf einer interaktiven Weltkarte per Smart Contracts mit raumbezogenen Daten zu agieren.
+  <a href="https://map.foam.space/">FOAM's TCR (Ethereum) basierte Weltkarte</a> ermöglicht es Usern, interaktiv mit raumbezogenen Daten über Smart Contracts zu agieren.
   <br><br>
-  Gemeinsam mit den <a href="https://foam.space/company">Developer Team von FOAM</a> bin ich an der Front- und Backendentwicklung beteiligt.
+  Als Teil des <a href="https://foam.space/company">Developer Teams von FOAM</a> war ich an der Front- und Backendentwicklung beteiligt.
 
 images:
   - /assets/images/work/foam-spatial-index-visualizer/0.png
