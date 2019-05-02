@@ -5,7 +5,7 @@ description: |
   <a href="https://foam.space/">FOAM</a> ist ein offenes Protokoll für dezentralisierte, raumbezogene Daten. 
   Es bildet raumbezogene Daten sicher auf der Blockchain ab - unabhängig von externen, zentralisierten Quellen, wie z.B. GPS. 
   <br><br>
-  Der <i>Spatial Index Visualizer</i> stellt Smart Contracts auf einer interaktiven Karte dar und ermöglicht es Usern, mit raumbezogenen Daten direkt zu agieren.
+  Der <i>Spatial Index Visualizer</i> ermöglicht es Usern, auf einer interaktiven Weltkarte per Smart Contracts mit raumbezogenen Daten zu agieren.
   <br><br>
   Gemeinsam mit den <a href="https://foam.space/company">Developer Team von FOAM</a> bin ich an der Front- und Backendentwicklung beteiligt.
 
@@ -17,7 +17,7 @@ responsibilities:
   - Backendentwicklung mit <a href="http://www.haskell.org">Haskell</a>
 
 timeframe:
-  April 2018 - heute
+  April 2018 - April 2019
 
 client:
   <a href="https://foam.space/">FOAM</a> - New York / USA
