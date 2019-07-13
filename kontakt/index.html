@@ -7,7 +7,6 @@ title: Kontakt
 
     <div class="left-content">
       <h2 class="contentHeadline">Büro Hamburg</h2>
-      <!-- <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4740.55055921498!2d9.99310432220161!3d53.552853239696184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18ee1f40ac559%3A0xd0d4f904d33712cd!2sHamburg-Mitte%2C+Lilienstra%C3%9Fe+11%2C+20095+Hamburg!5e0!3m2!1sde!2sde!4v1467458507398"></iframe> -->
       <div id="map-hh"></div>
       <address>
         <p>
@@ -22,18 +21,16 @@ title: Kontakt
       </address>
     </div>
     <div class="right-content">
-      <h2 id="impressum" class="contentHeadline">Büro Scharbeutz / Impressum</h2>
+      <h2 id="impressum" class="contentHeadline">Büro Haffkrug (Impressum)</h2>
       <div id="map-schbtz"></div>
-      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d74970.91959401019!2d10.755760727734378!3d54.04108415021939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b273beac691a13%3A0x4248963c65a6a20!2sScharbeutz!5e0!3m2!1sde!2sde!4v1440321343963" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-      <!-- <iframe frameborder="0" scrolling="no" style="border: 0" src="http://www.openstreetmap.org/export/embed.html?bbox=10.576744079589844%2C53.97900768881448%2C10.80333709716797%2C54.07016738212929&amp;layer=mapnik"></iframe> -->
       <address>
         <p>
           Jens Krause <br>
-          Ottersteig 13<br>
-          23683 Scharbeutz
+          Knoopsweg 15<br>
+          23683 Scharbeutz / Haffkrug
         </p>
         <p>
-          Telefon: +49 4503 - 888 74 71<br>
+          Telefon: +49 4563 - 47 88 88 7<br>
           Email: email AT jkrause DOT io
         </p>
         <p>
@@ -53,17 +50,15 @@ title: Kontakt
   var extra = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>';
   var mapHH = L.map('map-hh').setView([longHH, latHH], 14);
   var markerHH = L.marker([longHH, latHH]).addTo(mapHH);
-  // markerHH.bindPopup("Lilienstrasse 11<br/>20095 Hamburg").openPopup();
   L.tileLayer(url, {
     attribution: extra,
     maxZoom: mZ,
     id: i,
     accessToken: t
   }).addTo(mapHH);
-  // map Scharbeutz
+  // map Haffkrug
   var mapS = L.map('map-schbtz').setView([54.046, 10.8], 10.5);
-  var markerS = L.marker([54.0301536, 10.7406619]).addTo(mapS);
-  // markerS.bindPopup("Ottersteig 13<br/>23683 Scharbeutz").openPopup();
+  var markerS = L.marker([54.054784, 10.749849]).addTo(mapS);
   L.tileLayer(url, {
     attribution: extra,
     maxZoom: mZ,
@@ -71,15 +66,3 @@ title: Kontakt
     accessToken: t
   }).addTo(mapS);
 </script>
-
-<!-- <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' /> -->
-
-<!-- <div id='map' style='width: 400px; height: 300px;'></div>
-<script>
-mapboxgl.accessToken = 'pk.eyJ1Ijoic2VjdG9yZSIsImEiOiJjamJ6OHhlZWEzY25uMndvMGRxM3c2NmlhIn0.KbtL_wEkvUaw-x2suYjaNg';
-var map = new mapboxgl.Map({
-container: 'map',
-style: 'mapbox://styles/mapbox/light-v9'
-});
-</script> -->
