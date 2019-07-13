@@ -1,0 +1,19 @@
+timestamp: 2019-07-13
+title: 'LNX Protokoll'
+
+description: |
+  In dem <a href="https://lnxprotocol.io/team">internationalem Team</a> von <a href="http://lnxprotocol.io">LNX</a> bin ich an der Entwicklung einer 
+  <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">DAG</a> basierten Blockchain-Lösung 
+  on-top von <a href="https://substrate.dev/">Substrate</a> beteiligt.
+
+images:
+  - /assets/images/work/lnx-protocol/0.png
+
+responsibilities:
+  - Blockchain-Architektur und Entwicklung mit <a href="https://www.rust-lang.org/">Rust</a>
+
+timeframe:
+  Mai 2019 - heute
+
+client:
+  <a href="https://http://lnxprotocol.io">LNX</a> - Seoul / Südkorea
