@@ -2,18 +2,29 @@ timestamp: 2019-07-13
 title: 'LNX Protokoll'
 
 description: |
-  In dem <a href="https://lnxprotocol.io/team">internationalen Team</a> von <a href="http://lnxprotocol.io">LNX</a> bin ich an der Entwicklung einer 
-  <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">DAG</a> basierten Blockchain-Lösung 
-  on-top von <a href="https://substrate.dev/">Substrate</a> beteiligt.
+  <a href="http://lnxprotocol.io">LNX</a> hat das Ziel, eine <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">DAG</a> 
+  "infused" Blockchain zu entwickeln, welche on-top on <a href="https://paritytech.github.io/substrate">Substrate</a> läuft. 
+  <br><br>
+  Während des 3-monatigen Vertrages war es meine Hauptaufgabe, eine <a href="https://libp2p.io/">libp2p</a> basierte 
+  Lösung in <a href="https://www.rust-lang.org/">Rust</a> zu entwickeln. Dadurch können alle Nodes, welche den DAG erstellen und verarbeiten, 
+  sich im Netzwerk - und unabhängig von Substrate - erkennen, verbinden und kommunizieren. 
+  <br><br>
+  Eine weitere Aufgabe war die Entwicklung der Grundarchitektur für die LNX Wallet mit 
+  <a href="https://vuejs.org/">Vue.js</a>, <a href="https://vuex.vuejs.org/">Vuex</a> 
+  und <a href="https://www.typescriptlang.org/">Typescript</a>, 
+  um sich u.a. mit <a href="https://substrate.dev/">Substrate</a> Nodes per 
+  <a href="https://polkadot.js.org/">polkadot.js</a> zu verbinden und zu kommunizieren.
 
 images:
   - /assets/images/work/lnx-protocol/0.png
 
 responsibilities:
-  - Blockchain-Architektur und Entwicklung mit <a href="https://www.rust-lang.org/">Rust</a>
+  - Lösung für Discovery, Connection und Messaging der DAG verarbeitenden Nodes (<a href="https://libp2p.io/">libp2p</a>, <a href="https://www.rust-lang.org/">Rust</a>)
+  - Architektur der LNX Wallet (<a href="https://vuejs.org/">Vue.js</a>, <a href="https://vuex.vuejs.org/">Vuex</a>, 
+    <a href="https://polkadot.js.org/">polkadot.js</a>, <a href="https://www.typescriptlang.org/">Typescript</a>)
 
 timeframe:
-  Mai 2019 - heute
+  Mai 2019 - August 2019
 
 client:
   <a href="https://lnxprotocol.io">LNX</a> - Seoul / Südkorea
