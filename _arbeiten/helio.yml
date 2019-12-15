@@ -1,0 +1,26 @@
+timestamp: 2019-12-15
+title: 'Helio - HMI Management System'
+
+description: |
+  <a href="https://helio-hmi.com/">Helio</a> ist ein HMI Management für industrielle Anwendungen. 
+  Entwickelt wird dieses webbasierte CMS von der <a href="https://hmi-logic.com/">HMI Logic GmbH</a>.
+  <br><br>
+  Für die zukünftige Version von Helio entwickelte ich gemeinsam mit dem Developer Team von HMI Logic die Architektur für das Backend mit
+  <a href="https://neo4j.com/">Neo4J</a> und <a href="https://graphql.org/">GraphQL</a> 
+  sowie die Anbindung des Frontends mit <a href="https://reactjs.org/">React</a> und <a href="https://www.apollographql.com/">Apollo</a>.
+
+images:
+  - /assets/images/work/helio/0.png
+
+responsibilities:
+  - Research zu Graphdatenbanken mit GraphQL-Unterstützung
+  - Architektur des Backends (<a href="https://neo4j.com/">Neo4J</a>, <a href="https://graphql.org/">GraphQL</a>, 
+    <a href="https://www.typescriptlang.org/">Typescript</a>)
+  - Anbindung des Frontends an GraphQL-Schnittstellen (<a href="https://reactjs.org/">React</a>, <a href="https://www.apollographql.com/">Apollo</a>, 
+    <a href="https://www.typescriptlang.org/">Typescript</a>)
+
+timeframe:
+  Oktober - Dezember 2019
+
+client:
+  <a href="https://hmi-logic.com/">HMI Logic GmbH</a> - Würzburg
