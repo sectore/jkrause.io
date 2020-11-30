@@ -3,6 +3,7 @@ group: contact
 layout: default
 title: Kontakt
 ---
+
 <section id="contact">
 
     <div class="left-content">
@@ -15,22 +16,22 @@ title: Kontakt
           20095 Hamburg
         </p>
         <p>
-          Telefon: +49 40 - 20 93 210-75<br/>
+          Telefon: +49 40 20 93 210-75<br/>
           Email: email AT jkrause DOT io
         </p>
       </address>
     </div>
     <div class="right-content">
-      <h2 id="impressum" class="contentHeadline">Büro Haffkrug (Impressum)</h2>
-      <div id="map-schbtz"></div>
+      <h2 id="impressum" class="contentHeadline">Büro Travemünde (Impressum)</h2>
+      <div id="map-hl"></div>
       <address>
         <p>
           Jens Krause <br>
-          Knoopsweg 15<br>
-          23683 Scharbeutz / Haffkrug
+          Quellenweg 1<br>
+          23570 Lübeck-Travemünde
         </p>
         <p>
-          Telefon: +49 4563 - 47 88 88 7<br>
+          Telefon: +49 4502 880 42 55<br>
           Email: email AT jkrause DOT io
         </p>
         <p>
@@ -43,26 +44,29 @@ title: Kontakt
   // map HH
   var longHH = 53.552429;
   var latHH = 10.001988;
-  var t = 'pk.eyJ1Ijoic2VjdG9yZSIsImEiOiJjamJ6OHhlZWEzY25uMndvMGRxM3c2NmlhIn0.KbtL_wEkvUaw-x2suYjaNg';
-  var i = 'mapbox.streets';
+  var accessToken = 'pk.eyJ1Ijoic2VjdG9yZSIsImEiOiJja2hsc3l6ZXYwOHVxMnF0NGc0d2Z3MjE5In0.Etlz5AdKO_tSJQLK8FD-Xw';
+  var id = 'mapbox/streets-v8';
   var mZ = 18;
-  var url = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}';
+  var url = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}';
   var extra = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>';
+
   var mapHH = L.map('map-hh').setView([longHH, latHH], 14);
   var markerHH = L.marker([longHH, latHH]).addTo(mapHH);
   L.tileLayer(url, {
     attribution: extra,
     maxZoom: mZ,
-    id: i,
-    accessToken: t
+    id: id,
+    accessToken: accessToken
   }).addTo(mapHH);
-  // map Haffkrug
-  var mapS = L.map('map-schbtz').setView([54.046, 10.8], 10.5);
-  var markerS = L.marker([54.054784, 10.749849]).addTo(mapS);
+
+
+  // map hl
+  var mapHL = L.map('map-hl').setView([53.9633375, 10.8673586], 14);
+  var markerS = L.marker([53.9633375, 10.8673586]).addTo(mapHL);
   L.tileLayer(url, {
     attribution: extra,
     maxZoom: mZ,
-    id: i,
-    accessToken: t
-  }).addTo(mapS);
+    id: id,
+    accessToken: accessToken
+  }).addTo(mapHL);
 </script>
