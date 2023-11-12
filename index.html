@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link type="image/x-icon" rel="icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jens Krause</title>
+    <meta name="description" content="Software Entwickler mit Sitz in Lübeck" />
+    <meta name="author" content="jk" />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <main class="flex flex-col pt-36 pl-12 sm:pt-40 sm:pl-20 justify-center">
+      <h1 class="text-2xl sm:text-4xl">Jens Krause</h1>
+      <h2 class="text-lg sm:text-2xl mt-1">Softwareentwicklung</h2>
+      <p class="text-sm sm:text-base mt-4">Seit 1999.</p>
+      <!-- GH -->
+      <div class="flex mt-12">
+        <a class="mr-4 icon" 
+        href="https://github.com/sectore/">
+          <!-- https://api.iconify.design/radix-icons:github-logo.svg -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M7.5.25a7.25 7.25 0 0 0-2.292 14.13c.363.066.495-.158.495-.35c0-.172-.006-.628-.01-1.233c-2.016.438-2.442-.972-2.442-.972c-.33-.838-.805-1.06-.805-1.06c-.658-.45.05-.441.05-.441c.728.051 1.11.747 1.11.747c.647 1.108 1.697.788 2.11.602c.066-.468.254-.788.46-.969c-1.61-.183-3.302-.805-3.302-3.583a2.8 2.8 0 0 1 .747-1.945c-.075-.184-.324-.92.07-1.92c0 0 .61-.194 1.994.744A6.963 6.963 0 0 1 7.5 3.756A6.97 6.97 0 0 1 9.315 4c1.384-.938 1.992-.743 1.992-.743c.396.998.147 1.735.072 1.919c.465.507.745 1.153.745 1.945c0 2.785-1.695 3.398-3.31 3.577c.26.224.492.667.492 1.343c0 .97-.009 1.751-.009 1.989c0 .194.131.42.499.349A7.25 7.25 0 0 0 7.499.25Z" clip-rule="evenodd"/></svg>
+        </a>
+        <!-- LIN -->
+        <a class="mr-2 icon" 
+        href="https://www.linkedin.com/in/jenskrause/">
+          <!-- https://api.iconify.design/radix-icons:linkedin-logo.svg -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M2 1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2Zm1.05 5h1.9v6h-1.9V6Zm2.025-1.995a1.075 1.075 0 1 1-2.15 0a1.075 1.075 0 0 1 2.15 0ZM12 8.357c0-1.805-1.167-2.507-2.326-2.507a2.206 2.206 0 0 0-1.095.231c-.257.13-.526.424-.734.938h-.053V6H6v6.005h1.906V8.81c-.027-.327.077-.75.291-1.001c.215-.252.52-.312.753-.342h.073c.606 0 1.056.375 1.056 1.32v3.217h1.906L12 8.357Z" clip-rule="evenodd"/></svg>
+        </a>
+      </div>
+      <div x-data="{ open: false }" >
+        <button 
+          @click="open = !open"
+          class="group flex justify-center mt-20 mb-4 
+          text-sm sm:text-base text-gray-600 hover:text-gray-800"
+          x-bind:class="{ 'font-bold  text-gray-800': open }"
+          >Kontakt (Impressum) <span 
+          class="-rotate-90 group-hover:rotate-0 text-inherit ease"
+          x-bind:class="{ 'rotate-0 group-hover:!-rotate-180': open }"
+          >
+            <svg 
+              class="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m12 18l-6-6l1.4-1.4l3.6 3.575V6h2v8.175l3.6-3.575L18 12l-6 6Z"/></svg>
+          </span>
+        </button>
+        <address x-show="open" 
+          x-transition:enter="ease"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="ease"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+          class="text-sm sm:text-base text-gray-800 not-italic">
+          <p class="mb-4">
+            Willy-Brandt-Allee 31A</br>
+            23554 Lübeck</br>
+            Deutschland
+          </p>
+          <p class="mb-2">
+            <span class="font-bold">Telefon</span> +49 4502 880 42 55<br>
+            <span class="font-bold">Email</span> email AT jkrause DOT io<br>
+            <span class="font-bold">USt-Id</span> DE204810395
+          </p>
+        </address>
+      </div>
+    </main>
+  </body>
+</html>
