@@ -34,5 +34,5 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
-          source: "dist/*"
+          source: "dist/**/*"
           target: ${{ secrets.TARGET }}
