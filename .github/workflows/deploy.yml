@@ -2,7 +2,9 @@ name: Deploy
 
 on:
   push:
-    branches: [main]
+    branches: 
+      - main
+      - feat/ci
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -26,6 +28,7 @@ jobs:
 
       - name: copy file via ssh key
         uses: appleboy/scp-action@v0.1.4
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/feat/ci'
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
