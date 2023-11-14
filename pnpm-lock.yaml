@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@alpinejs/persist':
+    specifier: ^3.13.2
+    version: 3.13.2
   alpinejs:
     specifier: ^3.13.2
     version: 3.13.2
@@ -13,6 +16,9 @@ devDependencies:
   '@types/alpinejs':
     specifier: ^3.13.5
     version: 3.13.5
+  '@types/alpinejs__persist':
+    specifier: ^3.13.3
+    version: 3.13.3
   autoprefixer:
     specifier: ^10.4.16
     version: 10.4.16(postcss@8.4.31)
@@ -41,6 +47,10 @@ packages:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
     dev: true
+
+  /@alpinejs/persist@3.13.2:
+    resolution: {integrity: sha512-GWTqFBugNiGq/9E0XCkGnWBUcETrPG8Op2I+aBmiBfjkFCP6P/NLCHEbrEcaqWkok2Wp//0TLz3R2YBsFP0B1Q==}
+    dev: false
 
   /@esbuild/android-arm64@0.18.20:
     resolution: {integrity: sha512-Nz4rJcchGDtENV0eMKUNa6L12zz2zBDXuhj/Vjh18zGqB44Bi7MBMSXjgunJgjRhCmKOjnPuZp4Mb6OKqtMHLQ==}
@@ -293,6 +303,12 @@ packages:
 
   /@types/alpinejs@3.13.5:
     resolution: {integrity: sha512-BSNTroRhmBkNiyd7ELK/5Boja92hnQMST6H4z1BqXKeMVzHjp9o1j5poqd5Tyhjd8oMFwxYC4I00eghfg2xrTA==}
+    dev: true
+
+  /@types/alpinejs__persist@3.13.3:
+    resolution: {integrity: sha512-YCU1/WpyeWxLVOx+y50kDYJZXud69hwwXdYIxPFnanxmwJsOZ7LMd6D4BolybmkPWluBwlbJ+6i0t5tH6bSGsg==}
+    dependencies:
+      '@types/alpinejs': 3.13.5
     dev: true
 
   /@vue/reactivity@3.1.5:
