@@ -17,7 +17,7 @@ jobs:
       - name: Install Nix
         uses: cachix/install-nix-action@v30
 
-      - name: Check pnpm version
+      - name: Check versions
         run: nix develop --command bash -c 'node -v && npm -v && pnpm -v'
 
       - name: Install deps
