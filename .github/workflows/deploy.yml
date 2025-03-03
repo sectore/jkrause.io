@@ -3,8 +3,9 @@ name: Deploy
 on:
   push:
     branches:
+      # Note: This workflow was disabled manually at GH
+      # To enable it, follow https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/disabling-and-enabling-a-workflow#enabling-a-workflow
       - main
-      - fixdeploy
 
 jobs:
   build:
@@ -23,23 +24,9 @@ jobs:
       - name: Build content
         run: nix develop --command bash -c 'pnpm build'
 
-      - name: show content
-        run: ls dist/
-
-      # - uses: actions/upload-artifact@v4
-      #   with:
-      #     name: my-artifact
-      #     path: dist/**/*
-
-      # - uses: actions/download-artifact@v4
-      #   with:
-      #     name: my-artifact
-      #     path: artifacts
-
       - name: copy file via ssh key
-        uses: appleboy/scp-action@v0.1.4
-        # if: github.ref == 'refs/heads/main'
-        if: github.ref == 'refs/heads/fixdeploy'
+        uses: appleboy/scp-action@v0.1.7
+        if: github.ref == 'refs/heads/main'
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
