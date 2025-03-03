@@ -26,15 +26,15 @@ jobs:
       - name: show content
         run: ls dist/
 
-      - uses: actions/upload-artifact@v4
-        with:
-          name: my-artifact
-          path: dist/**/*
+      # - uses: actions/upload-artifact@v4
+      #   with:
+      #     name: my-artifact
+      #     path: dist/**/*
 
-      - uses: actions/download-artifact@v4
-        with:
-          name: my-artifact
-          path: artifacts
+      # - uses: actions/download-artifact@v4
+      #   with:
+      #     name: my-artifact
+      #     path: artifacts
 
       - name: copy file via ssh key
         uses: appleboy/scp-action@v0.1.4
@@ -45,6 +45,6 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
-          source: artifacts/**/*
+          source: "dist/*"
           target: ${{ secrets.TARGET }}
           strip_components: 1
