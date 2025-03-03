@@ -1,10 +1,8 @@
 <!doctype html>
-<html 
-  lang="en" x-data 
-  x-bind:class="{ 'dark': $store.darkMode.on }">
+<html lang="en" x-data x-bind:class="{ 'dark': $store.darkMode.on }">
   <head>
     <meta charset="UTF-8" />
-    <link type="image/x-icon" rel="icon" href="/favicon.ico">
+    <link type="image/x-icon" rel="icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,74 +10,141 @@
     <meta name="description" content="Software Entwickler mit Sitz in Lübeck" />
     <meta name="author" content="jk" />
     <script type="module" src="/src/main.ts"></script>
+    <link href="/src/styles.css" rel="stylesheet" />
+    <!-- <link href="/dist/styles.css" rel="stylesheet"> -->
   </head>
-  <body 
-    class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 ease "
-    >
-    <main class="flex flex-col pl-12 sm:pl-20 justify-center">
-      <div class="flex justify-end py-3 sm:py-4 mb-32 sm:mb-36">
-        <button x-on:click="$store.darkMode.toggle()" x-text="$store.darkMode.on ? 'hello' : 'world"
-          class="icon mr-3 sm:mr-6"
-          >
+  <body class="ani bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200">
+    <main class="flex flex-col justify-center pl-12 sm:pl-20">
+      <div class="mb-32 flex justify-end py-3 sm:mb-36 sm:py-4">
+        <button x-on:click="$store.darkMode.toggle()" class="icon mr-3 sm:mr-6">
           <template x-if="$store.darkMode.on">
             <!-- https://api.iconify.design/material-symbols:sunny-rounded.svg -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 5q-.425 0-.713-.288T11 4V2q0-.425.288-.713T12 1q.425 0 .713.288T13 2v2q0 .425-.288.713T12 5Zm4.95 2.05q-.275-.275-.275-.687t.275-.713l1.4-1.425q.3-.3.712-.3t.713.3q.275.275.275.7t-.275.7L18.35 7.05q-.275.275-.7.275t-.7-.275ZM20 13q-.425 0-.713-.288T19 12q0-.425.288-.713T20 11h2q.425 0 .713.288T23 12q0 .425-.288.713T22 13h-2Zm-8 10q-.425 0-.713-.288T11 22v-2q0-.425.288-.713T12 19q.425 0 .713.288T13 20v2q0 .425-.288.713T12 23ZM5.65 7.05l-1.425-1.4q-.3-.3-.3-.725t.3-.7q.275-.275.7-.275t.7.275L7.05 5.65q.275.275.275.7t-.275.7q-.3.275-.7.275t-.7-.275Zm12.7 12.725l-1.4-1.425q-.275-.3-.275-.713t.275-.687q.275-.275.688-.275t.712.275l1.425 1.4q.3.275.288.7t-.288.725q-.3.3-.725.3t-.7-.3ZM2 13q-.425 0-.713-.288T1 12q0-.425.288-.713T2 11h2q.425 0 .713.288T5 12q0 .425-.288.713T4 13H2Zm2.225 6.775q-.275-.275-.275-.7t.275-.7L5.65 16.95q.275-.275.687-.275t.713.275q.3.3.3.713t-.3.712l-1.4 1.4q-.3.3-.725.3t-.7-.3ZM12 18q-2.5 0-4.25-1.75T6 12q0-2.5 1.75-4.25T12 6q2.5 0 4.25 1.75T18 12q0 2.5-1.75 4.25T12 18Z"/></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M12 5q-.425 0-.713-.288T11 4V2q0-.425.288-.713T12 1q.425 0 .713.288T13 2v2q0 .425-.288.713T12 5Zm4.95 2.05q-.275-.275-.275-.687t.275-.713l1.4-1.425q.3-.3.712-.3t.713.3q.275.275.275.7t-.275.7L18.35 7.05q-.275.275-.7.275t-.7-.275ZM20 13q-.425 0-.713-.288T19 12q0-.425.288-.713T20 11h2q.425 0 .713.288T23 12q0 .425-.288.713T22 13h-2Zm-8 10q-.425 0-.713-.288T11 22v-2q0-.425.288-.713T12 19q.425 0 .713.288T13 20v2q0 .425-.288.713T12 23ZM5.65 7.05l-1.425-1.4q-.3-.3-.3-.725t.3-.7q.275-.275.7-.275t.7.275L7.05 5.65q.275.275.275.7t-.275.7q-.3.275-.7.275t-.7-.275Zm12.7 12.725l-1.4-1.425q-.275-.3-.275-.713t.275-.687q.275-.275.688-.275t.712.275l1.425 1.4q.3.275.288.7t-.288.725q-.3.3-.725.3t-.7-.3ZM2 13q-.425 0-.713-.288T1 12q0-.425.288-.713T2 11h2q.425 0 .713.288T5 12q0 .425-.288.713T4 13H2Zm2.225 6.775q-.275-.275-.275-.7t.275-.7L5.65 16.95q.275-.275.687-.275t.713.275q.3.3.3.713t-.3.712l-1.4 1.4q-.3.3-.725.3t-.7-.3ZM12 18q-2.5 0-4.25-1.75T6 12q0-2.5 1.75-4.25T12 6q2.5 0 4.25 1.75T18 12q0 2.5-1.75 4.25T12 18Z"
+              />
+            </svg>
           </template>
           <!-- https://api.iconify.design/material-symbols-light:dark-mode-rounded.svg -->
           <template x-if="!$store.darkMode.on">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12.058 20q-3.333 0-5.667-2.334Q4.058 15.333 4.058 12q0-2.47 1.413-4.536t4.01-2.972q.306-.107.536-.056q.231.05.381.199t.191.38q.042.233-.062.489q-.194.477-.282.971q-.087.494-.087 1.025q0 2.673 1.863 4.537q1.864 1.863 4.537 1.863q.698 0 1.278-.148q.58-.148.987-.24q.217-.04.4.01q.18.051.29.176q.116.125.157.308q.042.182-.047.417q-.715 2.45-2.803 4.014Q14.733 20 12.058 20Z"/></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M12.058 20q-3.333 0-5.667-2.334Q4.058 15.333 4.058 12q0-2.47 1.413-4.536t4.01-2.972q.306-.107.536-.056q.231.05.381.199t.191.38q.042.233-.062.489q-.194.477-.282.971q-.087.494-.087 1.025q0 2.673 1.863 4.537q1.864 1.863 4.537 1.863q.698 0 1.278-.148q.58-.148.987-.24q.217-.04.4.01q.18.051.29.176q.116.125.157.308q.042.182-.047.417q-.715 2.45-2.803 4.014Q14.733 20 12.058 20Z"
+              />
+            </svg>
           </template>
-
         </button>
       </div>
       <h1 class="text-2xl sm:text-4xl">Jens Krause</h1>
-      <h2 class="text-lg sm:text-2xl mt-1">Softwareentwicklung</h2>
-      <p class="text-sm sm:text-base mt-4">Seit 1999.</p>
-      <!-- GH -->
-      <div class="flex mt-12">
-        <a class="mr-4 icon" 
-        href="https://github.com/sectore/">
-          <!-- https://api.iconify.design/radix-icons:github-logo.svg -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M7.5.25a7.25 7.25 0 0 0-2.292 14.13c.363.066.495-.158.495-.35c0-.172-.006-.628-.01-1.233c-2.016.438-2.442-.972-2.442-.972c-.33-.838-.805-1.06-.805-1.06c-.658-.45.05-.441.05-.441c.728.051 1.11.747 1.11.747c.647 1.108 1.697.788 2.11.602c.066-.468.254-.788.46-.969c-1.61-.183-3.302-.805-3.302-3.583a2.8 2.8 0 0 1 .747-1.945c-.075-.184-.324-.92.07-1.92c0 0 .61-.194 1.994.744A6.963 6.963 0 0 1 7.5 3.756A6.97 6.97 0 0 1 9.315 4c1.384-.938 1.992-.743 1.992-.743c.396.998.147 1.735.072 1.919c.465.507.745 1.153.745 1.945c0 2.785-1.695 3.398-3.31 3.577c.26.224.492.667.492 1.343c0 .97-.009 1.751-.009 1.989c0 .194.131.42.499.349A7.25 7.25 0 0 0 7.499.25Z" clip-rule="evenodd"/></svg>
+      <h2 class="mt-1 text-lg sm:text-2xl">Softwareentwicklung</h2>
+      <p class="mt-4 text-sm sm:text-base">Seit 1999.</p>
+      <div class="mt-12 flex">
+        <!-- X -->
+        <a class="icon" href="https://x.com/sectore">
+          <!-- https://about.x.com/en/who-we-are/brand-toolkit (scaled w/ Inkscape) -->
+          <svg
+            width="32"
+            height="32"
+            version="1.1"
+            viewBox="0 0 18 18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="currentColor"
+              d="m11.044 8.4681 5.5841-6.3515h-1.3232l-4.8487 5.5149-3.8726-5.5149h-4.4666l5.8561 8.3395-5.8561 6.6605h1.3233l5.1203-5.8239 4.0898 5.8239h4.4666l-6.0733-8.6485zm-1.8125 2.0615-0.59335-0.83043-4.7211-6.6078h2.0326l3.81 5.3327 0.59335 0.83043 4.9525 6.9317h-2.0326l-4.0414-5.6563z"
+            />
+          </svg>
         </a>
-        <!-- LIN -->
-        <a class="mr-2 icon" 
-        href="https://www.linkedin.com/in/jenskrause/">
+        <!-- GH -->
+        <a class="icon mx-2" href="https://github.com/sectore">
+          <!-- https://api.iconify.design/radix-icons:github-logo.svg -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 15 15"
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M7.5.25a7.25 7.25 0 0 0-2.292 14.13c.363.066.495-.158.495-.35c0-.172-.006-.628-.01-1.233c-2.016.438-2.442-.972-2.442-.972c-.33-.838-.805-1.06-.805-1.06c-.658-.45.05-.441.05-.441c.728.051 1.11.747 1.11.747c.647 1.108 1.697.788 2.11.602c.066-.468.254-.788.46-.969c-1.61-.183-3.302-.805-3.302-3.583a2.8 2.8 0 0 1 .747-1.945c-.075-.184-.324-.92.07-1.92c0 0 .61-.194 1.994.744A6.963 6.963 0 0 1 7.5 3.756A6.97 6.97 0 0 1 9.315 4c1.384-.938 1.992-.743 1.992-.743c.396.998.147 1.735.072 1.919c.465.507.745 1.153.745 1.945c0 2.785-1.695 3.398-3.31 3.577c.26.224.492.667.492 1.343c0 .97-.009 1.751-.009 1.989c0 .194.131.42.499.349A7.25 7.25 0 0 0 7.499.25Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </a>
+        <!-- LINKEDIN -->
+        <a class="icon" href="https://www.linkedin.com/in/jenskrause">
           <!-- https://api.iconify.design/radix-icons:linkedin-logo.svg -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M2 1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2Zm1.05 5h1.9v6h-1.9V6Zm2.025-1.995a1.075 1.075 0 1 1-2.15 0a1.075 1.075 0 0 1 2.15 0ZM12 8.357c0-1.805-1.167-2.507-2.326-2.507a2.206 2.206 0 0 0-1.095.231c-.257.13-.526.424-.734.938h-.053V6H6v6.005h1.906V8.81c-.027-.327.077-.75.291-1.001c.215-.252.52-.312.753-.342h.073c.606 0 1.056.375 1.056 1.32v3.217h1.906L12 8.357Z" clip-rule="evenodd"/></svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 15 15"
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M2 1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2Zm1.05 5h1.9v6h-1.9V6Zm2.025-1.995a1.075 1.075 0 1 1-2.15 0a1.075 1.075 0 0 1 2.15 0ZM12 8.357c0-1.805-1.167-2.507-2.326-2.507a2.206 2.206 0 0 0-1.095.231c-.257.13-.526.424-.734.938h-.053V6H6v6.005h1.906V8.81c-.027-.327.077-.75.291-1.001c.215-.252.52-.312.753-.342h.073c.606 0 1.056.375 1.056 1.32v3.217h1.906L12 8.357Z"
+              clip-rule="evenodd"
+            />
+          </svg>
         </a>
       </div>
-      <div x-data="{ open: false }" >
-        <button 
+      <div x-data="{ open: false }">
+        <button
           @click="open = !open"
-          class="group flex justify-center mt-20 mb-4 
-          text-sm sm:text-base text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+          class="group mt-20 mb-4 flex justify-center text-sm text-gray-600 hover:text-gray-800 sm:text-base dark:text-gray-400 dark:hover:text-gray-200"
           x-bind:class="{ 'font-bold  text-gray-800 dark:!text-gray-200': open }"
-          >Kontakt (Impressum) <span 
-          class="-rotate-90 group-hover:rotate-0 text-inherit ease"
-          x-bind:class="{ 'rotate-0 group-hover:!-rotate-180': open }"
+        >
+          Kontakt (Impressum)
+          <span
+            class="ani -rotate-90 text-inherit group-hover:rotate-0"
+            x-bind:class="{ 'rotate-0 group-hover:!-rotate-180': open }"
           >
-            <svg 
-              class="w-6 h-6"
-            xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m12 18l-6-6l1.4-1.4l3.6 3.575V6h2v8.175l3.6-3.575L18 12l-6 6Z"/></svg>
+            <svg
+              class="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="m12 18l-6-6l1.4-1.4l3.6 3.575V6h2v8.175l3.6-3.575L18 12l-6 6Z"
+              />
+            </svg>
           </span>
         </button>
-        <address x-show="open" 
-          x-transition:enter="ease"
+        <address
+          x-show="open"
+          x-transition:enter="ani"
           x-transition:enter-start="opacity-0"
           x-transition:enter-end="opacity-100"
-          x-transition:leave="ease"
+          x-transition:leave="ani"
           x-transition:leave-start="opacity-100"
           x-transition:leave-end="opacity-0"
-          class="text-sm sm:text-base text-gray-800 dark:text-gray-200 not-italic">
+          class="text-sm text-gray-800 not-italic sm:text-base dark:text-gray-200"
+        >
           <p class="mb-4">
-            Willy-Brandt-Allee 31A</br>
-            23554 Lübeck</br>
+            Willy-Brandt-Allee 31A<br />
+            23554 Lübeck<br />
             Deutschland
           </p>
           <p class="mb-2">
-            <span class="font-bold">Telefon</span> +49 4502 880 42 55<br>
-            <span class="font-bold">Email</span> email AT jkrause DOT io<br>
+            <span class="font-bold">Telefon</span> +49 4502 880 42 55<br />
+            <span class="font-bold">Email</span> email AT jkrause DOT io<br />
             <span class="font-bold">USt-Id</span> DE204810395
           </p>
         </address>

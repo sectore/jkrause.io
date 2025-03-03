@@ -1,22 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 body {
   font-family: "Roboto Mono", monospace;
 }
 
-@layer components {
+button {
+  @apply cursor-pointer;
+}
 
-  .ease {
-    @apply transition duration-300 ease-in-out;
-  }
+@utility ani {
+  @apply transition duration-300 ease-in-out;
+}
 
-  .icon {
-    @apply text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 hover:scale-110 ease;
+@utility icon {
+  @apply ani text-gray-500 hover:scale-110 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200;
+  & > svg {
+    @apply h-6 w-6;
   }
-  .icon > svg {
-    @apply w-6 h-6;
-  }
-
 }

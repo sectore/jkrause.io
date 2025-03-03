@@ -17,7 +17,7 @@
       {
         devShell = pkgs.mkShell {
           nativeBuildInputs = with pkgs; [
-            nodejs_20
+            nodejs_22
             nodePackages.pnpm
           ];
         };
