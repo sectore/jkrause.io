@@ -37,7 +37,7 @@ jobs:
           path: artifacts
 
       - name: copy file via ssh key
-        uses: appleboy/scp-action@v0.1.6
+        uses: appleboy/scp-action@v0.1.4
         # if: github.ref == 'refs/heads/main'
         if: github.ref == 'refs/heads/fixdeploy'
         with:
