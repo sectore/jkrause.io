@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - fixdeploy
 
 jobs:
   build:
@@ -22,9 +23,20 @@ jobs:
       - name: Build content
         run: nix develop --command bash -c 'pnpm build'
 
+      - uses: actions/upload-artifact@v4
+        with:
+          name: my-artifact
+          path: dist/
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: my-artifact
+          path: dist/
+
       - name: copy file via ssh key
         uses: appleboy/scp-action@v0.1.7
-        if: github.ref == 'refs/heads/main'
+        # if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/fixdeploy'
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
