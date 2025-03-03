@@ -2,8 +2,9 @@ name: Deploy
 
 on:
   push:
-    branches: 
+    branches:
       - main
+      - upgrd
 
 jobs:
   build:
