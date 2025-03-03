@@ -1,24 +1,24 @@
-import './styles.css'
+import "./styles.css";
 
-import Alpine from 'alpinejs'
-import persist from '@alpinejs/persist'
- 
-Alpine.plugin(persist)
+import Alpine from "alpinejs";
+import persist from "@alpinejs/persist";
+
+Alpine.plugin(persist);
 
 const darkModeStore = {
-  on: false, 
+  on: false,
   init() {
     this.on = Alpine.$persist(
-      window.matchMedia('(prefers-color-scheme: dark)').matches
-    ).as('darkMode') as unknown as boolean; // override type
+      window.matchMedia("(prefers-color-scheme: dark)").matches,
+    ).as("darkMode") as unknown as boolean; // override type
   },
   toggle() {
-    this.on = !this.on
-  }
-}
+    this.on = !this.on;
+  },
+};
 
-Alpine.store('darkMode', darkModeStore)
+Alpine.store("darkMode", darkModeStore);
 
-window.Alpine = Alpine
+window.Alpine = Alpine;
 
-Alpine.start()
+Alpine.start();
