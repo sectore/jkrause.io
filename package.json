@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "clean": "rm -rf dist/**/*",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "fmt": "node_modules/.bin/prettier --write src index.html"
